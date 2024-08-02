@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html  class="loading"  lang="en-US"><!--------m------------->
+<html class="loading" lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>PRO Card -Milad Faghani/ CV / vCard Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1" />
     <meta name="description" content="PRO Card - Material Resume / CV / vCard Template" />
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
     <meta name="author" content="lmtheme" />
@@ -20,17 +20,24 @@
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
-
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- اضافه کردن تنظیمات بات -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/e5e5847b-22e2-4fd4-900a-d7369f8781b4/webchat/config.js" defer></script>
+    <script>
+      function openChat() {
+        window.location.href = 'https://mediafiles.botpress.cloud/e5e5847b-22e2-4fd4-900a-d7369f8781b4/webchat/bot.html';
+      }
+    </script>
   </head>
 
   <body class="material-template">
     <!-- Loading animation -->
     <div class="preloader">
       <div class="preloader-animation">
-        <div class="preloader-spinner">
-        </div>
+        <div class="preloader-spinner"></div>
       </div>
     </div>
     <!-- /Loading animation -->
@@ -48,19 +55,15 @@
             <!-- Main menu -->
             <ul id="nav" class="site-main-menu">
               <li>
-                <a class="pt-trigger" href="#home" data-animation="62">Home</a><!-- href value = data-id without # of .pt-page. -->
+                <a class="pt-trigger" href="#home" data-animation="62">Home</a>
               </li>
               <li>
                 <a class="pt-trigger" href="#resume" data-animation="62">Resume</a>
               </li>
-              <li>
-               
-              </li>
+              <li></li>
               <li>
                 <a class="pt-trigger" href="#portfolio" data-animation="62">Portfolio</a>
               </li>
-             
-              
             </ul>
             <!-- /Main menu -->
           </div>
@@ -98,14 +101,12 @@
                         <img src="images/photo.png" alt="">
                       </div>
                     </div>
-
                     <div class="col-sm-8 col-md-8 col-lg-8">
                       <div class="title-block">
                         <h1>Milad Faghani</h1>
-                        <div class="owl-carousel text-rotation">                                    
+                        <div class="owl-carousel text-rotation">
                           <div class="item">
-                            <div class="sp-subtitle">Social Media
-                              Specialist</div>
+                            <div class="sp-subtitle">Social Media Specialist</div>
                           </div>
                           <div class="item">
                             <div class="sp-subtitle">Editor</div>
@@ -114,10 +115,14 @@
                       </div>
 
                       <div class="social-links">
-                        <a href="https://www.linkedin.com/in/milad-faghani-702a63185//"><i class="fa fa-linkedin" ></i></a>
+                        <a href="https://www.linkedin.com/in/milad-faghani-702a63185//"><i class="fa fa-linkedin"></i></a>
                         <a href="https://t.me/ghbh86"><i class="fa fa-telegram"></i></a>
                         <a href="https://www.instagram.com/milad.f2001"><i class="fa fa-instagram"></i></a>
-                  
+                      </div>
+
+                      <!-- دکمه چت با بات -->
+                      <div class="chat-button">
+                        <button onclick="openChat()" class="btn btn-primary">Chat with Bot</button>
                       </div>
                     </div>
                   </div>
@@ -125,13 +130,12 @@
 
                 <div class="page-content">
                   <div class="row">
-
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="about-me">
                         <div class="block-title">
                           <h3>About <span>Me</span></h3>
                         </div>
-                        <p>Hello!My name is Milad, I'm a creative person with ideas, I love history, politics, and technology. My favorite pastimes are books, game design, anime, and I love to improve day by day, and in this way I will not spare any effort. I love group work and team oriented and I know myself as a responsible person.</p>
+                        <p>Hello! My name is Milad, I'm a creative person with ideas, I love history, politics, and technology. My favorite pastimes are books, game design, anime, and I love to improve day by day, and in this way I will not spare any effort. I love group work and team oriented and I know myself as a responsible person.</p>
                       </div>
                       <div class="download-resume">
                         <a href="https://mstorage2.jobinjacdn.com/records/files/uploads/documents/d0743c36-f2fd-4a92-ba51-d1067687ff1e.pdf?requester=3134312e31312e3130332e313330&resource=753a31353734383134&from=6170706c69636174696f6e5f666f726d&X-Amz-Content-Sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=oetSom924MQvtCRu9N6vvQ4bt8cG9HSpRnxWU756SyWy5NVt6nTpmfA9aV2b%2F20240801%2F%2Fs3%2Faws4_request&X-Amz-Date=20240801T162754Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=2c4954fe9cc34b1155e7a4129cd07630beea59cae48db88f069c66083b2a1476" class="btn btn-secondary">Download Resume</a>
@@ -162,14 +166,12 @@
                   <h2>Resume</h2>
                 </div>
                 <div class="page-content">
-
                   <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="block">
                         <div class="block-title">
                           <h3>Education</h3>
                         </div>
-
                         <div class="timeline">
                           <!-- Education 1 -->
                           <div class="timeline-item">
@@ -191,10 +193,10 @@
 
                           <!-- Education 3 -->
                           <div class="timeline-item">
-                            <h4 class="item-title">Web Design </h4>
+                            <h4 class="item-title">Web Design</h4>
                             <span class="item-period">2020</span>
                             <span class="item-small">University of Tehran.</span>
-                            <p class="item-description">web design, html, css, wordpress,.</p>
+                            <p class="item-description">web design, html, css, wordpress.</p>
                           </div>
                           <!-- / Education 3 -->
                         </div>
@@ -206,11 +208,10 @@
                         <div class="block-title">
                           <h3>Experience</h3>
                         </div>
-
                         <div class="timeline">
                           <!-- Experience 1 -->
                           <div class="timeline-item">
-                            <h4 class="item-title">Social Media Specialistr</h4>
+                            <h4 class="item-title">Social Media Specialist</h4>
                             <span class="item-period">Feb 2022 - Present</span>
                             <span class="item-small">Axon</span>
                             <p class="item-description">Design, content production, editing, content management.</p>
@@ -228,10 +229,10 @@
 
                           <!-- Experience 3 -->
                           <div class="timeline-item">
-                            <h4 class="item-title">Graphic Designer,Editor</h4>
-                            <span class="item-period">Jul 2020 - Apr 2021 </span>
+                            <h4 class="item-title">Graphic Designer, Editor</h4>
+                            <span class="item-period">Jul 2020 - Apr 2021</span>
                             <span class="item-small">TOURISM TV.</span>
-                            <p class="item-description">Compilation, design,Brand design, graphic design.</p>
+                            <p class="item-description">Compilation, design, Brand design, graphic design.</p>
                           </div>
                           <!-- / Experience 3 -->
                         </div>
@@ -245,24 +246,20 @@
                         <div class="block-title">
                           <h3>Design <span>Skills</span></h3>
                         </div>
-
                         <div class="skills-info">
-                          <h4>Adobe programs</h4>                               
+                          <h4>Adobe programs</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-1"></div>
                           </div>
-
                           <h4>Web Design</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-2"></div>
                           </div>
-
                           <h4>Graphic Design</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-3"></div>
-                          </div> 
+                          </div>
                         </div>
-
                       </div>
                     </div>
 
@@ -271,24 +268,20 @@
                         <div class="block-title">
                           <h3>Knowledge <span>Skills</span></h3>
                         </div>
-
                         <div class="skills-info">
-                          <h4>Computer knowledge</h4>                               
+                          <h4>Computer knowledge</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-4"></div>
                           </div>
-
                           <h4>CSS/HTML5/wordpress</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-5"></div>
                           </div>
-
                           <h4>Digital marketing/Network</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-6"></div>
-                          </div> 
+                          </div>
                         </div>
-                        
                       </div>
                     </div>
                   </div>
@@ -304,12 +297,10 @@
                     </div>
                   </div>
                   <!-- End of Download Resume Button -->
-
                 </div>
               </div>
             </section>
             <!-- End of Resume Subpage -->
-
 
             <!-- Services Subpage -->
             <section class="pt-page" data-id="services">
@@ -327,9 +318,8 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3">
-                      <div class="service-block"> 
+                      <div class="service-block">
                         <div class="service-info">
-                          <!--<i class="service-icon fa fa-shopping-cart"></i>-->
                           <div class="service-image">
                             <img src="images/service/web_design_icon.png" alt="Responsive Design" class="mCS_img_loaded">
                           </div>
@@ -340,7 +330,7 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3">
-                      <div class="service-block"> 
+                      <div class="service-block">
                         <div class="service-info">
                           <div class="service-image">
                             <img src="images/service/photography_icon.png" alt="Photography" class="mCS_img_loaded">
@@ -352,7 +342,7 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3">
-                      <div class="service-block"> 
+                      <div class="service-block">
                         <div class="service-info">
                           <div class="service-image">
                             <img src="images/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
@@ -364,7 +354,7 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3">
-                      <div class="service-block"> 
+                      <div class="service-block">
                         <div class="service-info">
                           <div class="service-image">
                             <img src="images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
@@ -375,8 +365,6 @@
                       </div>
                     </div>
                   </div>
-
-            
                   <!-- End of My Services -->
 
                   <!-- Clients -->
@@ -433,89 +421,67 @@
                         <h3>Testimonials</h3>
                       </div>
 
-
                       <div class="testimonials owl-carousel block">
                         <!-- Testimonial 1 -->
                         <div class="testimonial-item">
-                          <!-- Testimonial Author -->
                           <div class="testimonial-credits">
-                            <!-- Picture -->
                             <div class="testimonial-picture">
                               <img src="images/testimonials/testimonial_photo_1.jpg" alt="">
-                            </div>              
-                            <!-- /Picture -->
-                            <!-- Testimonial author information -->
+                            </div>
                             <div class="testimonial-author-info">
                               <p class="testimonial-author">Maria Richardson</p>
                               <p class="testimonial-firm">Lindsley's Lumber</p>
                             </div>
                           </div>
-                          <!-- /Testimonial author information -->
-                          <!-- Testimonial Content -->
                           <div class="testimonial-content">
                             <div class="testimonial-text">
                               <p>"Phasellus eu nunc tincidunt, ultricies elit vitae, pretium eros. Sed sed ipsum sed massa."</p>
                             </div>
-                          </div>            
-                          <!-- /Testimonial Content -->                
+                          </div>
                         </div>
                         <!-- End of Testimonial 1 -->
 
                         <!-- Testimonial 2 -->
                         <div class="testimonial-item">
-                          <!-- Testimonial Author -->
                           <div class="testimonial-credits">
-                            <!-- Picture -->
                             <div class="testimonial-picture">
                               <img src="images/testimonials/testimonial_photo_2.jpg" alt="">
-                            </div>              
-                            <!-- /Picture -->
-                            <!-- Testimonial author information -->
+                            </div>
                             <div class="testimonial-author-info">
                               <p class="testimonial-author">John Doe</p>
                               <p class="testimonial-firm">Apple Inc.</p>
                             </div>
                           </div>
-                          <!-- /Testimonial author information -->
-                          <!-- Testimonial Content -->
                           <div class="testimonial-content">
                             <div class="testimonial-text">
                               <p>"Vivamus porta dapibus tristique. Suspendisse et arcu eget nisi convallis eleifend nec ac lorem.</p>
                             </div>
-                          </div>            
-                          <!-- /Testimonial Content -->                
+                          </div>
                         </div>
                         <!-- End of Testimonial 2 -->
 
                         <!-- Testimonial 3 -->
                         <div class="testimonial-item">
-                          <!-- Testimonial Author -->
                           <div class="testimonial-credits">
-                            <!-- Picture -->
                             <div class="testimonial-picture">
                               <img src="images/testimonials/testimonial_photo_3.jpg" alt="">
-                            </div>              
-                            <!-- /Picture -->
-                            <!-- Testimonial author information -->
+                            </div>
                             <div class="testimonial-author-info">
                               <p class="testimonial-author">George McQueen</p>
                               <p class="testimonial-firm">Harmony House</p>
                             </div>
                           </div>
-                          <!-- /Testimonial author information -->
-                          <!-- Testimonial Content -->
                           <div class="testimonial-content">
                             <div class="testimonial-text">
                               <p>"Aliquam congue auctor lectus sed fermentum. Nulla ultricies tellus quis sapien lacinia egestas."</p>
                             </div>
-                          </div>            
-                          <!-- /Testimonial Content -->                
+                          </div>
                         </div>
                         <!-- End of Testimonial 3 -->
                       </div>
                     </div>
                   </div>
-                  <!-- End of Tesimonials -->
+                  <!-- End of Testimonials -->
 
                   <!-- Pricing -->
                   <div class="row">
@@ -538,21 +504,14 @@
                             <div class="lm-button-row">
                               <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
                             </div>
-                            <div class="lm-default-row">
-                              Lorem ipsum dolor
-                            </div>
-                            <div class="lm-default-row">
-                              Pellentesque scelerisque
-                            </div>
-                            <div class="lm-default-row">
-                              Morbi eu sagittis
-                            </div>
-                            <div class="lm-default-row">
-                            </div>
+                            <div class="lm-default-row">Lorem ipsum dolor</div>
+                            <div class="lm-default-row">Pellentesque scelerisque</div>
+                            <div class="lm-default-row">Morbi eu sagittis</div>
+                            <div class="lm-default-row"></div>
                           </div>
                         </div>
 
-                        <div class="lm-package-wrap col-md-4 highlight-col ">
+                        <div class="lm-package-wrap col-md-4 highlight-col">
                           <div class="lm-package">
                             <div class="lm-heading-row">
                               <span>Plan 2</span>
@@ -561,33 +520,23 @@
                               <span>$128</span>
                               <small>per month</small>
                             </div>
-                            
+
                             <div class="lm-button-row">
                               <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
                             </div>
-                            <div class="lm-default-row">
-                              Lorem ipsum dolor
-                            </div>
-                            <div class="lm-default-row">
-                              Pellentesque scelerisque
-                            </div>
-                            <div class="lm-default-row">
-                              Morbi eu sagittis
-                            </div>
-                            <div class="lm-default-row">
-                              Donec non diam
-                            </div>
-                            <div class="lm-default-row">
-                            </div>
+                            <div class="lm-default-row">Lorem ipsum dolor</div>
+                            <div class="lm-default-row">Pellentesque scelerisque</div>
+                            <div class="lm-default-row">Morbi eu sagittis</div>
+                            <div class="lm-default-row">Donec non diam</div>
+                            <div class="lm-default-row"></div>
                           </div>
                         </div>
 
-                        <div class="lm-package-wrap col-md-4 default-col ">
+                        <div class="lm-package-wrap col-md-4 default-col">
                           <div class="lm-package">
                             <div class="lm-heading-row">
                               <span>Plan 3</span>
                             </div>
-                            
                             <div class="lm-pricing-row">
                               <span>$256</span>
                               <small>per month</small>
@@ -597,21 +546,11 @@
                               <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
                             </div>
 
-                            <div class="lm-default-row">
-                              Lorem ipsum dolor
-                            </div>
-                            <div class="lm-default-row">
-                              Pellentesque scelerisque
-                            </div>
-                            <div class="lm-default-row">
-                              Morbi eu sagittis
-                            </div>
-                            <div class="lm-default-row">
-                              Donec non diam
-                            </div>
-                            <div class="lm-default-row">
-                              Aenean nec libero
-                            </div>
+                            <div class="lm-default-row">Lorem ipsum dolor</div>
+                            <div class="lm-default-row">Pellentesque scelerisque</div>
+                            <div class="lm-default-row">Morbi eu sagittis</div>
+                            <div class="lm-default-row">Donec non diam</div>
+                            <div class="lm-default-row">Aenean nec libero</div>
                           </div>
                         </div>
                       </div>
@@ -623,7 +562,6 @@
             </section>
             <!-- End of Services Subpage -->
 
-
             <!-- Portfolio Subpage -->
             <section class="pt-page" data-id="portfolio">
               <div class="section-inner custom-page-content">
@@ -631,10 +569,8 @@
                   <h2>Portfolio</h2>
                 </div>
                 <div class="page-content">
-
                   <!-- Portfolio Content -->
                   <div class="portfolio-content">
-                                
                     <!-- Portfolio filter -->
                     <ul id="portfolio_filters" class="portfolio-filters">
                       <li class="active">
@@ -654,7 +590,6 @@
 
                     <!-- Portfolio Grid -->
                     <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
                       <!-- Portfolio Item 1 -->
                       <figure class="item" data-groups='["all", "media"]'>
                         <a class="ajax-page-load" href="portfolio-1.html">
@@ -683,7 +618,7 @@
 
                       <!-- Portfolio Item 3 -->
                       <figure class="item" data-groups='["all","illustration"]'>
-                        <a href="https://www.uplooder.net/img/image/33/c9fcca973041a52bb14e4d770ce0c881/space-background-blue-dots.jpg" class="lightbox" >
+                        <a href="https://www.uplooder.net/img/image/33/c9fcca973041a52bb14e4d770ce0c881/space-background-blue-dots.jpg" class="lightbox">
                           <img src="https://www.uplooder.net/img/image/33/c9fcca973041a52bb14e4d770ce0c881/space-background-blue-dots.jpg" alt="">
                           <div>
                             <h5 class="name">Project 2</h5>
@@ -693,8 +628,6 @@
                         </a>
                       </figure>
                       <!-- /Portfolio Item 3 -->
-
-                
 
                       <!-- Portfolio Item 5 -->
                       <figure class="item" data-groups='["all", "illustration"]'>
@@ -709,8 +642,6 @@
                       </figure>
                       <!-- /Portfolio Item 5 -->
 
-                  
-
                       <!-- Portfolio Item 7 -->
                       <figure class="item" data-groups='["all", "video"]'>
                         <a href="https://www.namasha.com/v/b25gwxqn" title="Milad Edit" class="lightbox mfp-iframe">
@@ -723,8 +654,6 @@
                         </a>
                       </figure>
                       <!-- /Portfolio Item 7 -->
-
-                     
 
                       <!-- Portfolio Item 9 -->
                       <figure class="item" data-groups='["all","illustration"]'>
@@ -764,11 +693,8 @@
                         </a>
                       </figure>
                       <!-- /Portfolio Item 11 -->
-
-                      
-                    
+                    </div>
                     <!-- /Portfolio Grid -->
-
                   </div>
                   <!-- /Portfolio Content -->
                 </div>
@@ -783,7 +709,6 @@
                   <h2>Blog</h2>
                 </div>
                 <div class="page-content">
-
                   <!-- Blog Posts Grid -->
                   <div class="blog-masonry two-columns">
                     <!-- Blog Post 1 -->
@@ -793,7 +718,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">6</span><span class="month">Dec</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">6</span><span class="month">Dec</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -813,7 +738,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">3</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">3</span><span class="month">Nov</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -833,7 +758,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">12</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">12</span><span class="month">Oct</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -853,7 +778,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">18</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">18</span><span class="month">Aug</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -873,10 +798,10 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">2</span><span class="month">Jul</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">2</span><span class="month">Jul</span></div>
                           </a>
                         </div>
-                        <div class="post-info">                        
+                        <div class="post-info">
                           <ul class="category">
                             <li><a href="#">CSS3</a></li>
                           </ul>
@@ -893,7 +818,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">8</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">8</span><span class="month">May</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -913,7 +838,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">7</span><span class="month">Apr</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">7</span><span class="month">Apr</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -933,7 +858,7 @@
                           <a href="blog-post-1.html">
                             <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
                             <div class="mask"></div>
-                            <div class="post-date"><span class="day">21</span><span class="month">Mar</span><!--<span class="year">2016</span>--></div>
+                            <div class="post-date"><span class="day">21</span><span class="month">Mar</span></div>
                           </a>
                         </div>
                         <div class="post-info">
@@ -959,7 +884,6 @@
                   <h2>Contact</h2>
                 </div>
                 <div class="page-content">
-
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="block-title">
@@ -1008,9 +932,7 @@
                         <h3>Contact <span>Form</span></h3>
                       </div>
                       <form id="contact-form" method="post" action="contact_form/contact_form.php">
-
                         <div class="messages"></div>
-
                         <div class="controls">
                           <div class="form-group form-group-with-icon">
                             <i class="fa fa-user"></i>
@@ -1047,7 +969,6 @@
               </div>
             </section>
             <!-- End Contact Subpage -->
-
           </div>
         </div>
         <!-- /Page changer wrapper -->
@@ -1067,7 +988,6 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/jquery.googlemap.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
